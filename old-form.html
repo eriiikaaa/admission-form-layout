@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration for new student</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #384047;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        textarea,
+        select {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: 0;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: #8a97a0;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+            margin-bottom: 30px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 4px 8px 0;
+        }
+        
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 2px;
+        }
+        
+        button {
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            background-color: #4bc970;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 100%;
+            border: 1px solid #3ac162;
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+        }
+        
+        fieldset {
+            margin-bottom: 30px;
+            border: none;
+        }
+        
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        label.light {
+            font-weight: 300;
+            display: inline;
+        }
+        
+        .number {
+            background-color: #5fcf80;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post">
+                <h1> Admission Form </h1>
+
+                <fieldset>
+
+                    <legend><span class="number">1</span> Basic Info</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+
+                    <label>Date of Birth</label>
+                    <input type="date" id="date_of_birth" value="date_of_birth" name="date_of_birth"><br>
+
+                    <label for="nationality">Nationality</label>
+                    <select id="nationality " name="nationality">
+           
+                        <option value="nepalese">Nepalese</option>
+                        <option value="non-nepalese">Non-nepalese</option>
+
+                    </select>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+    
+                        <option value="male ">Male</option>
+                        <option value="female ">Female</option>
+                        <option value="other ">Other</option>
+
+                    </select>
+
+                    <label>Does the child have any health issue?</label>
+                    <input type="radio" id="health_issue_yes" name="health_issue_yes" value="Yes">Yes <br>
+                    <input type="radio" id="health_issue_no" name="health_issue_no" value="No">No <br>
+
+                    <label for="health_issue_description">If your child has health issue, please mention.</label>
+                    <input type="text" id="health_issue_description" name="health_issue_description">
+
+                    <label for="address">Where does the child live?</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="grade">Admission is sought for class/grade</label>
+                    <select id="grade" name="grade">
+    
+                        <option value="Playgroup/Nursery ">Playgroup/Nursery</option>
+                        <option value="LKG ">LKG</option>
+                        <option value="UKG ">UKG</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                    </select>
+
+                    <label for="previous_school">Name of the last school attended</label>
+                    <input type="text" id="previous_school" name="previous_school">
+
+                </fieldset><fieldset>
+
+                    <legend><span class="number">2</span> Additional Info</legend>
+                    <label for="father's_name">Name of father</label>
+                    <input type="text" id="father's_name" name="father's_name">
+
+                    <label for="father's_contact_number">Father's contact number</label>
+                    <input type="text" id="father's_contact_number" name="father's_contact_number">
+
+                    <label for="mother's_name">Name of mother</label>
+                    <input type="text" id="mother's_name" name="mother's_name">
+
+                    <label for="mother's_contact_number">Mother's contact number</label>
+                    <input type="text" id="mother's_contact_number" name="mother's_contact_number">
+
+                    <label>Does the child have any sibling currently studying at SVI?</label>
+                    <input type="radio" id="sibling_yes" name="sibling_yes" value="Yes">Yes <br>
+                    <input type="radio" id="sibling_no" name="sibling_no" value="No">No <br>
+
+                    <label>Does the child need transportation facility?</label>
+                    <input type="radio" id="transportation_facility_yes" name="transportation_facility_yes" value="Yes">Yes <br>
+                    <input type="radio" id="transportation_facility_no" name="transportation_facility_no" value="No">No <br>
+
+                    <label for="station">If transportation facility is needed, please mention the pick up/drop station</label>
+                    <input type="text" id="station" name="station">
+
+                    <label for="email">Corresponding Email Address</label>
+                    <input type="email" id="mail" name="user_email">
+
+
+                </fieldset>
+
+                <button type="submit ">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
